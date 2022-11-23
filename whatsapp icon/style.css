@@ -1,0 +1,26 @@
+/*------------Start Whatsapp Icon*/
+.wapp-icon {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  transition: 150ms;
+}
+.wapp-icon:hover {
+ transform: scale(1.1);
+}
+.wapp-icon a svg {
+  width: 70px;
+  height: 70px;
+  fill: #25D366;
+  color: #fff;
+  stroke-width: 1px;
+  filter: drop-shadow(0 0 10px #c2c2c26b);
+}
+ @media (max-width: 992px) {
+  .wapp-icon {
+   width: 50px;
+   height: 50px;
+    bottom: 100px;
+  }
+}
+/*-----------End Whatsapp Icon*/
