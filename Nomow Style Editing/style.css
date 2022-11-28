@@ -1,0 +1,103 @@
+:root {
+  --black: #231f20;
+  --black-light: #636363;
+  --white: #fff;
+  --orange: #f26522;
+  --orange-light: #ff854b;
+  --orange-lighter: #ffc2a5;
+  --tr200: 200ms;
+  --tr250: 250ms;
+  --tr500: 500ms;
+  }
+  
+  /* ----Start body background */
+  .home-block--bg, body {
+    background-color: #fcfcfc !important;
+  }
+  /* ----End body background */
+  
+  /*----Start Slide Arrow*/
+  .splide__track {
+    overflow-x: hidden !important;
+  }
+  .splide__arrow {
+    background-color: var(--orange-lighter) !important;
+    fill: var(--white) !important;
+  }
+  /*----Start Slide Arrow*/
+  
+  /*----Start Product Box*/
+  .product-block {
+    overflow-x: hidden !important;
+    border: none !important;
+    outline: none !important;
+    /*border-bottom: 1px solid var(--orange-lighter) !important;*/
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    position: relative;
+    transition: var(--tr250);
+  }
+  .product-block::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    background-color: var(--orange-light);
+    width: 0%;
+    height: 2px;
+    transition: var(--tr250);
+  }
+  .product-block:hover::before {
+    width: 100%;
+  }
+  .product-block:hover {
+   box-shadow: 0 1px 20px 0 rgb(238, 238, 238) !important;
+   transform: translateY(-5px) scale(1.05);
+  }
+  
+  /*--------Start Add To Card*/
+  .btn--add-to-cart {
+    background: var(--orange-light) !important ;
+    border-radius: 0 5px 5px 0 !important;
+  }
+    .btn--add-to-cart:hover {
+      background: var(--orange) !important ;
+  }
+  .product-block .btn--add-to-cart .s-button-element i {
+    color: var(--white) !important;
+  }
+  
+  .btn--floated .s-button-element {
+    background-color: none !important ;
+    color: var(--black) !important;
+  }
+  /*--------End Add To Card*/
+  
+  /*----End Product Box*/
+  
+  /* ----Start Whatsapp Icon*/
+  .wapp-icon {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    transition: 150ms;
+  }
+  .wapp-icon:hover {
+    transform: scale(1.1);
+  }
+  .wapp-icon a svg {
+    width: 70px;
+    height: 70px;
+    fill: #25D366;
+    color: #fff;
+    stroke-width: 1px;
+    filter: drop-shadow(0 0 10px #c2c2c26b);
+  }
+  @media (max-width: 992px) {
+    .wapp-icon {
+      width: 50px;
+      height: 50px;
+      bottom: 100px;
+     }
+  }
+  /* ----Start Whatsapp Icon*/
