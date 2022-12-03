@@ -11,3 +11,15 @@ link.innerHTML = `<a href='https://api.whatsapp.com/send/?phone=966504706185&tex
 </a>`;
 
 document.body.append(link);
+
+
+//------------All Products Button
+
+const all = document.createElement('a');
+all.className = 'all';
+all.id = 'all';
+all.href = 'https://davin.store/%D9%83%D9%84-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/c1447309527';
+all.innerText = `كل
+ المنتجات`;
+
+document.body.append(all);

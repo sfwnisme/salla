@@ -1,0 +1,31 @@
+:root {
+  --black: #231f20;
+  --black-light: #636363;
+  --white: #fff;
+  --orange: #f26522;
+  --orange-light: #ff854b;
+  --orange-lighter: #ffc2a5;
+  --tr100: 100ms;
+  --tr200: 200ms;
+  --tr250: 250ms;
+  --tr300: 300ms;
+  --tr500: 500ms;
+}
+
+.all {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background-color: var(--orange);
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  z-index: 10000000;
+  padding: 10px 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-decoration: none;
+}
