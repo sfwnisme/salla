@@ -98,15 +98,15 @@ body {
   color: var(--black) !important;
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .product-block .btn--add-to-cart .s-button-element {
-   transform: translate(-10px, 10px) !important;
-   -webkit-transition: var(--tr300);
-   -moz-transition: var(--tr300);
-   -ms-transition: var(--tr300);
-   -o-transition: var(--tr300);
-   transition: var(--tr300);
-}
+    transform: translate(-10px, 10px) !important;
+    -webkit-transition: var(--tr300);
+    -moz-transition: var(--tr300);
+    -ms-transition: var(--tr300);
+    -o-transition: var(--tr300);
+    transition: var(--tr300);
+  }
 }
 .product-block:hover .btn--add-to-cart .s-button-element {
   -webkit-transform: rotate(-20deg) translate(0px, -1px) scale(2.2) !important;
@@ -143,42 +143,42 @@ body {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-}
+  }
   20% {
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
     transform: rotate(-5deg);
-}
+  }
   40% {
     -webkit-transform: rotate(7deg) scale(1.05);
     -moz-transform: rotate(7deg) scale(1.05);
     -ms-transform: rotate(7deg) scale(1.05);
     -o-transform: rotate(7deg) scale(1.05);
     transform: rotate(7deg) scale(1.05);
-}
+  }
   60% {
     -webkit-transform: rotate(-6deg);
     -moz-transform: rotate(-6deg);
     -ms-transform: rotate(-6deg);
     -o-transform: rotate(-6deg);
     transform: rotate(-6deg);
-}
+  }
   80% {
     -webkit-transform: rotate(4deg);
     -moz-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
     -o-transform: rotate(4deg);
     transform: rotate(4deg);
-}
+  }
   100% {
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
     transform: rotate(-5deg);
-}
+  }
 }
 .wapp-icon a svg {
   width: 70px;
@@ -211,9 +211,9 @@ body {
 
 /* -----Start Navigation Media(991px)*/
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .nav-mobile .main-nav {
-    border-radius: 0
+    border-radius: 0;
   }
   .nav-mobile .main-nav li a {
     padding: 10px !important;
@@ -247,7 +247,7 @@ body {
   padding: 4px 9px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius:50%;
+  -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
   text-decoration: none;

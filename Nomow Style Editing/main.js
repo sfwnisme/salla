@@ -1,5 +1,8 @@
 /* Whatsapp Icon */
 
+// still not using it till I find time
+const dominName = `https://${window.location.hostname}/whatsapp/send`;
+
 let link = document.createElement("div");
 link.className = "wapp-icon";
 link.innerHTML = `<a href='https://api.whatsapp.com/send/?phone=966504706185&text&type=phone_number&app_absent=0'>
@@ -12,14 +15,20 @@ link.innerHTML = `<a href='https://api.whatsapp.com/send/?phone=966504706185&tex
 
 document.body.append(link);
 
-
 //------------All Products Button
 
-const all = document.createElement('a');
-all.className = 'all';
-all.id = 'all';
-all.href = 'https://davin.store/%D9%83%D9%84-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/c1447309527';
-all.innerText = `كل
- المنتجات`;
+const all = document.createElement("a");
+all.className = "all";
+all.id = "all";
+all.href =
+  "https://davin.store/%D9%83%D9%84-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/c1447309527";
+all.innerText = "جميع المنتجات";
 
 document.body.append(all);
+
+// change the sold product number
+// this is the #id of the product that we want to change its sold number
+let x = document.querySelector("#product_832760221 .purchase-hot span");
+//x.innerText = 1000;
+let val = +x.innerText + 764;
+x.innerText = val;
